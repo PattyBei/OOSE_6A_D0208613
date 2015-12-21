@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+//12311231
 //D0208613 陳佩貝
 class Question {
    String description;
@@ -9,9 +11,29 @@ class Question {
    }      
 
 }
-interface exam{
-	   
+
+abstract class ExamPaper {
+    public ExamPaper() {
+    }
+    abstract void op () ;
 }
-class Composite {
+class Topic extends ExamPaper {
+
+    public Topic() {
+    }
+
+	@Override
+	void op() {		
+	}
+
+}
+class OtherPaperTopic extends ExamPaper {
+	ArrayList <ExamPaper > gList ;
 	
+    public OtherPaperTopic() {
+    }
+    
+	@Override
+	void op() {	
+	}
 }
